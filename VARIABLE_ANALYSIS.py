@@ -39,6 +39,8 @@ def check_df(dataframe, head=5, tail=5, quan=False):
         print('########## Quantiles ##########')
         print(dataframe.describe([0, 0.05, 0.50, 0.95, 0.99, 1]).T)
 
+    
+
 
 def grab_col_names(dataframe, cat_th=10, car_th=20):
     """
@@ -94,6 +96,7 @@ def grab_col_names(dataframe, cat_th=10, car_th=20):
     print(f"cat_but_car: {len(cat_but_car)}")
     print(f"num_but_cat: {len(num_but_cat)}")
 
+   return cat_cols, num_cols, cat_but_car
 
 def cat_summary(dataframe, col_name, plot=False):
     """
