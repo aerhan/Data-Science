@@ -1,3 +1,3 @@
 # Data-Science
 
-This Repo includes Data Science Studies 
+This Repo includes my studies in Data Science field 
